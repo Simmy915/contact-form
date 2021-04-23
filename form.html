@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <!-- modify this form HTML and place wherever you want your form -->
+
+    <form id="form" action="https://formspree.io/f/xgervdej" method="POST">
+      <h1 id="contact-heading">Contact Form </h1>
+      <div class="contact-info">
+        <!--NAME-->
+        <label for="name">Your Full Name</label>
+        <input
+          class="contact-input"
+          type="name" id="name" name="name"
+          placeholder="Your Full Name"
+          required
+        />
+      </div>
+      <div class="contact-info">
+        <!--EMAIL ADDRESS-->
+        <label for="email">Your email address</label>
+        <input
+          class="contact-input"
+          type="email"
+          id="email"
+          name="email-address"
+          placeholder="name@domain.com"
+          required
+        />
+      </div>
+      <div>
+        <!--PHONE NUMBER-->
+        <label for="tel">Your phone number</label>
+        <input
+          class="contact-input" type="tel"id="tel" name="phone-number" placeholder="072 123 4567"
+        />
+      </div>
+      <div>
+        <!--MESSAGE-->
+        <div class="contact-info"></div>
+        <label for="message">Your message</label>
+        <input
+          class="contact-input"
+          type="message"
+          id="message" name="message"
+          placeholder="Your message here"
+      <!-- your other form fields go here -->
+      <!--BUTTON-->
+      <button id="button" type="submit">Send</button>
+    </form>
+  </body>
+</html>
